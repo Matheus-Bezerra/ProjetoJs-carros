@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap');
+
+:root {
+    /*CORES*/
+    --header-color: #212121;
+    --text-color: #000;
+    --title-color: #B6B6B6;
+    --active-color: #FA1819;
+    --text-secondary-color: #fff;
+    /*FONTS*/
+    --title-font: 3rem;
+    --text-font: 1.125rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: #444;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--text-font);
+    color: var(--text-secondary-color);
+    
+}
+.container {
+    background: url(img/annie-spratt-6a3nqQ1YwBw-unsplash.jpg) no-repeat center/cover;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: auto;
+    position: relative;
+}
+h1 {
+    font-family: 'Bitter', serif;
+    font-size: var(--title-font);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 20vh;
+    right: 20vh;
+    background-color: var(--header-color);
+    max-width: 80%;
+    margin: 3vh auto;
+    height: 75px;
+}
+header nav {
+    height: 100%;
+}
+header nav ul {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+header nav ul li.active {
+    transition: all 2s;
+    color: var(--active-color);
+    border-bottom: 1px solid var(--active-color);
+}
+
+/*Conteudo*/
+
+.section__car {
+    margin: 30vh auto;
+}
+
+.section__car main {
+    margin: auto;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.section__car main .car__text  {
+    flex: 1 0 300px;
+}
+.section__car main .car__text h1 {
+    letter-spacing: .3rem;
+    margin-bottom: 40px;
+}
+.section__car main .car__text p {
+    margin-bottom: 60px;
+}
+
+.section__car main .car__text ol {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-bottom: 80px;
+}
+.section__car main .car__text ol li + li {
+    margin-top: 1rem;
+}
+.section__car main .car__text .car__vel {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 150px;
+
+}
+.section__car main .car__text .car__vel img {
+    width: 100px;
+    height: 100%;
+}
+.section__car main .car__text .car__vel .vel__img {
+    margin-right: 60px;
+}
+.section__car main .car__text .car__vel p {
+    font-size: calc(var(--title-font) - .5rem);
+    font-weight: 500;
+    letter-spacing: .2rem;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.section__car main .car__img {
+    flex: 1 0;
+    align-self: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
