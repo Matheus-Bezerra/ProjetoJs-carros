@@ -7,7 +7,7 @@
 <hr> <br>
 
 <div align="center">
-    <img src="img/projetoCarrosjavascript.gif" alt="Projeto-cars-gif" height="425">
+    <img src="img/projetoCarrosJavascript.gif" alt="Projeto-cars-gif" height="425">
 </div>
 
 ---
